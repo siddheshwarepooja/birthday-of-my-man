@@ -1,0 +1,163 @@
+body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(135deg,#e719b0,hsla(320, 95%, 17%, 0.258));
+    font-family:Arial,sans-serif;
+    overflow-y:Auto;
+    overflow-x: hidden;
+    min-height: 100vh;
+    
+}
+
+
+.container{
+    width:80%;
+    max-width:700px;
+    margin:50px auto;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+h1{
+    color:#340525;
+}
+
+h2{
+    color:#86cce3;
+}
+
+p{
+    font-size:18px;
+    color:#444;
+    line-height:1.7;
+}
+
+button{
+    margin-top:20px;
+    padding:15px 30px;
+    border:none;
+    background:#ff0095;
+    color:white;
+    font-size:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#d9045c;
+}
+
+.hidden{
+    display:none;
+    margin-top:20px;
+}
+
+.heart{
+    position:absolute;
+    color:white;
+    font-size:25px;
+    animation:float 6s linear infinite;
+}
+
+.photo{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img{
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+h1{
+    color: rgb(17, 17, 17);          /* Change to any color you like */
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.gallery img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.3);
+transition:.5s;
+}
+
+.gallery img:hover{
+transform:scale(1.08);
+}
+
+.love-list{
+font-size:22px;
+line-height:2;
+list-style:none;
+}
+
+.love-letter{
+    width:80%;
+    max-width:900px;
+    margin:40px auto;
+    padding:35px;
+    background:linear-gradient(145deg,#fff7f9,#ffe6ef);
+    border:5px solid #2f132dc0;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(255,20,147,0.35);
+    text-align:center;
+    position:relative;
+}
+
+.love-letter::before{
+    content:"🎁";
+    position:absolute;
+    top:-25px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:45px;
+}
+
+.love-letter h2{
+    color:#ff006e;
+    font-size:34px;
+    margin-bottom:20px;
+    font-family:"Georgia", serif;
+}
+
+.love-letter p{
+    font-family:"Georgia", serif;
+    font-size:22px;
+    line-height:2;
+    color:#5c2a3d;
+    text-align:center;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-100px);
+    }
+}
